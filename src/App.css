@@ -1,0 +1,43 @@
+/* src/index.css */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Pretendard-Regular', sans-serif;
+}
+
+.form-control::placeholder {
+  color: darkgrey;
+  opacity: 1; 
+}
+
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  margin: 70px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgb(255, 255, 255);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 16px;
+}
+
+.card-hover {
+  transition: background-color 0.3s ease;
+}
+
+.card-hover:hover {
+  background-color: #343a40; /* bg-dark 색상 */
+}
